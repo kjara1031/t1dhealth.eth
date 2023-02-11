@@ -15,7 +15,7 @@ class Fountain {
       // if (document.getElementById("field-email") === document.activeElement) {
       //   this.variants = ["🩸"];
       // } else {
-      //   this.variants = ["🏴‍☠️"];
+      //   this.variants = ["🩸"];
       // }
       this.createParticle();
     }
