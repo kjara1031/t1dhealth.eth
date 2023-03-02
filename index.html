@@ -1,53 +1,133 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Mi página web</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Tree</title>
+    <link rel="stylesheet" href="css/backgound.css">
 </head>
-
 <body>
     <header>
-        <h1>Encabezado de la página</h1>
-        <div class="social-icons">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="https://twitter.com/rjara1031"><i class="fab fa-twitter"></i></a>
-        </div>
+        <nav id="nav-header">
+            <img id="nav-icon" class="icon" src="images/tree-icon.jpg"/>
+            <ul id="header-menu">
+                <li>
+                    <a id="images/app-store-button" class="btn" href="https://app.ens.domains/name/t1dhealth.eth/details" target="_blank">Precio</a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/rjara1031" target="_blank>
+                        <img class="icon" src="images/twitter1.png"/>
+                    </a>
+                </li>
+            </ul>
+        </nav>
     </header>
-    <div class="jumbotron">
-        <h2>Bienvenido a mi sitio web</h2>
-        <p>Este es un sitio web de demostración para mostrar cómo crear un Jumbotron.</p>
-        <a href="#" class="btn">Ver más</a>
-        <a id="images/app-store-button" class="btn" href="https://app.ens.domains/name/t1dhealth.eth/details">Mi
-            billetera</a>
-
-    </div>
-
-    <div id="content">
-        <h2>Catálogo de artículos</h2>
-        <div class="article">
-            <h3>Artículo 1</h3>
-            <p>Descripción del artículo 1</p>
-            <a href="#" class="btn">Comprar</a>
-        </div>
-
-        <div class="article">
-            <h3>Artículo 2</h3>
-            <p>Descripción del artículo 2</p>
-            <a href="#" class="btn">Comprar</a>
-        </div>
-
-        <div class="article">
-            <h3>Artículo 3</h3>
-            <p>Descripción del artículo 3</p>
-            <a href="#" class="btn">Comprar</a>
-        </div>
-    </div>
+    <main>
+        <section id="jumbotron">
+            <article>
+                <div class="left-side-jumbotron">
+                    <p class="page-name">Your Tree</p>
+                    <p class="message-jumbotron">Registra tu árbol genealógico de manera dinámica e intuitiva y compartelo con tus familiares</p>
+                    <div>
+                        <label for="email-jumbotron" id="email-jumbotron">Registrate</label>
+                        <input id="email-jumbotron" name="email" placeholder="Correo electrónico"/>
+                    </div>
+                </div>
+                <div id="right-side-jumbotron" class="image"></div>
+            </article>
+        </section>
+        <section id="articles">
+            <h2 class="h2-title">Nuestros precios</h2>
+            <div id="promotions">
+                <article class="promotion shadow">
+                    <div class="image product" id="free-product"></div>
+                    <a href="#">Gratis</a>
+                    <ul>
+                        <li>Acceso a registrar tu árbol genealógico de máximo 15 miembros.</li>
+                        <li>Maximo 5 imagenes o fotografias.</li>
+                        <li>5Mb de espacio.</li>
+                        <li>Exportar tu árbol genealógico en formato JPEG.</li>
+                    </ul>
+                </article>
+                <article class="promotion shadow">
+                    <div class="image product" id="premium-product"></div>
+                    <a href="#">Premium</a>
+                    <p>$9.99 Mensuales</p>
+                    <ul>
+                        <li>Acceso a registrar tu árbol genealógico sin límite de miembros</li>
+                        <li>Subir imagenes y videos cortos de tus familiares</li>
+                        <li>Invitar a editar y colaborar a 5 personas en tu árbol</li>
+                        <li>500Mb de espacio</li>
+                        <li>Exportar tu árbol genealógico en todos nuestros formatos</li>
+                        <li>Acesso a temas</li>
+                    </ul>
+                </article>
+                <article class="promotion shadow">
+                    <div class="image product" id="gold-product"></div>
+                    <a href="#">Gold</a>
+                    <p>$14.99 Mensuales</p>
+                    <ul>
+                        <li>Acceso a registrar tu árbol genealógico sin límite de miembros</li>
+                        <li>Unir tu árbol genealógico con otros que se encuentren registrados</li>
+                        <li>Acceso a escudo de armas de tu apellido</li>
+                        <li>Subir imagenes y videos cortos de tus familiares</li>
+                        <li>Invitar a editar y colaborar a 15 personas en tu árbol</li>
+                        <li>2Gb de espacio</li>
+                        <li>Exportar tu árbol genealógico en todos nuestros formatos</li>
+                        <li>Acesso a temas</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+        <section>
+            <div class="galery flex-column">
+                <h2 class="h2-title">Galería</h2>
+                <article class="product-images">
+                    <div class="image shadow genealogical-tree"></div>
+                    <div class="image shadow coat-one"></div>
+                    <div class="image shadow coat-two"></div>
+                    <div class="image shadow family-tree-one"></div>
+                    <div class="image shadow family-tree-two"></div>
+                    <div class="flex-column">
+                        <h2 id="galery-message">Lo hacemos con el corazón</h2>
+                    </div>
+                </article>
+            </div>
+            <article class="flex-column">
+                <p class="h2-title">Acerca del creador</p>
+                <div id="div-about-me">
+                    <p>"Soy un apasionado por el desarrollo web, y en la búsqueda de compartir mis conocimientos con la gente que amo quise crear un lugar en donde podamos poner un poquito de cada uno y encontrar nuestro lugar en la familia, así es como nació <br><strong>Your Tree</strong>."</p>
+                    <div id="author-image" class="image shadow"></div>
+                </div>
+                <div>
+                    <p>Nuestras redes sociales</p>
+                    <div>
+                        <a href="https://twitter.com/rjara1031"  target="_blank>
+                            <img class="icon" src="images/twitter1.png"/>
+                        </a>
+                        <img class="icon" src="images/face.png"/>
+                        <img class="icon" src="images/insta.png"/>
+                        <img class="icon" src="images/youtube.png"/>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
     <footer>
-        <p>Pie de página aquí</p>
+        <div class="flex-row">
+            <p>©Copyright 2023</p>
+            <ul>
+                <li>Registrate</li>
+                <li>Inicio de seción</li>
+                <li>Inicio</li>
+                <li>Demo</li>
+                <li>Blog</li>
+                <li>Licencia</li>
+                <li>Politica de privacidad</li>
+                <li>Contacta con nosotros</li>
+            </ul>
+        </div>
     </footer>
 </body>
-
 </html>

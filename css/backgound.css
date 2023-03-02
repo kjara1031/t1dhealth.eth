@@ -1,0 +1,466 @@
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: black;
+    color: #F0F2F2;
+    height: 50px;
+    width: 1200px;
+}
+
+#nav-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+}
+
+#nav-icon {
+    margin-left: 5px;
+}
+
+.image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size:100% 100%;
+}
+
+.shadow {
+    border: 1px solid black;
+    box-shadow: 0 0 25px 2px #282a2d;
+}
+
+header li {
+    list-style: none;
+}
+
+#header-menu {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin-right: 15px;
+    gap: 30px;
+}
+
+nav li:hover {
+    color: rgb(0, 255, 213);
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+main {
+    background-color: #F0F2F2;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='812' height='812' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23DADAFF' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23DEDFDE'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+}
+
+#jumbotron {
+    margin-bottom: 10%;
+}
+
+#jumbotron article {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    height: 700px;
+}
+
+.left-side-jumbotron {
+    grid-column: 1 / 3;
+    margin-left: 20%;
+    margin-right: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#right-side-jumbotron {
+    grid-column: 3 / 6;
+    background-image: url("../images/familiy-jumbotron.jpg");
+    margin-top: 15%;
+    margin-bottom: 15%;
+}
+
+#email-jumbotron {
+    font-size: 15px;
+}
+
+#articles {
+    height: 900%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#articles div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#promotions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+    gap: 30px;
+}
+
+.promotion {
+    display: flex;
+    flex-direction: column;
+    height: 750px;
+    width: 300px;
+    background-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 12px;
+}
+
+.promotion li {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 21px;
+}
+
+.promotion a {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 100;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.product {
+    width: 100%;
+    height: 200px;
+}
+
+.h2-title {
+    font-size: 50px;
+}
+
+#free-product {
+    background-image: url("../images/free-product.jpg");
+}
+
+#premium-product {
+    background-image: url("../images/premium-product.jpg");
+}
+
+#gold-product {
+    background-image: url("../images/gold-product.jpg");
+}
+
+p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.page-name {
+    font-size: 70px;
+    text-align: center;
+}
+
+.message-jumbotron {
+    font-size: 20px;
+    text-align: left;
+}
+
+.product-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 170px);
+    gap: 30px;
+    width: 100%;
+}
+
+.galery {
+    margin: 2% 2% 2% 2%;
+}
+
+.genealogical-tree {
+    grid-area: 1 / 1 / 3 /3;
+    background-image: url("../images/genealogical-tree.jpg");
+}
+
+.coat-one {
+    grid-area: 1 / 4 / 3 /3;
+    background-image: url("../images/coat-one.jpg");
+}
+
+.coat-two {
+    grid-area: 3 / 1 / 5 / 2;
+    background-image: url("../images/coat-two.jpg");
+}
+
+.family-tree-one {
+    grid-area: 5 / 2 / 4 / 3;
+    background-image: url("../images/family-tree-one.jpg");
+}
+
+.family-tree-two {
+    grid-area: 3 / 3 / 5 / 4;
+    background-image: url("../images/familiy-tree-two.jpg");
+}
+
+#galery-message {
+    font-size: 40px;
+    text-align: center;
+}
+
+#div-about-me {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1, 100%;
+    width: 80%;
+    height: 600px;
+    gap: 100px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 22px;
+}
+
+#div-about-me p {
+    align-self: center;
+}
+
+.info-author {
+    display: flex;
+    flex-direction: column;
+}
+
+#author-image {
+    background-image: url("../images/creator.jpg");
+}
+
+footer {
+    background-color: black;
+    color: #F0F2F2;
+    height: 80px;
+    width: 1200px;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer li {
+    list-style: none;
+    margin-right: 15px;
+}
+
+footer li:hover {
+    color: rgb(0, 255, 213);
+}
+
+footer p {
+    margin-left: 15px;
+}
+
+footer .flex-row {
+    justify-content: space-between;
+    width: 95%;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+    header {
+        width: 1024px;
+    }
+
+    main {
+        width: 1024px;
+    }
+
+    footer {
+        width: 1024px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    header {
+        width: 750px
+    }
+
+    main {
+        width: 750px
+    }
+
+    footer {
+        width: 750px;
+    }
+
+    #promotion {
+        height: auto;
+        width: 200px;
+    }
+
+    .promotion ul {
+        padding-inline-start: 20px
+    }
+
+    .promotion li {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 17px;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    header {
+        width: 100%;
+    }
+
+    #header-menu {
+        align-items: center;
+        font-size: 10px;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    #jumbotron {
+        margin-bottom: 0%;
+    }
+
+    #jumbotron article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .page-name {
+        font-size: 60px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    #right-side-jumbotron {
+        width: 350px;
+        height: 250px;
+        margin: 15px;
+    }
+
+    .left-side-jumbotron div {
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+    }
+
+    .h2-title {
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+
+    #promotions {
+        flex-direction: column !important;
+    }
+
+    .promotion {
+        height: auto;
+    }
+
+    .shadow {
+        border: 1px solid black;
+        box-shadow: 0 0 5px 1px #282a2d;
+    }
+
+    .promotion li {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 15px;
+    }
+
+    #galery-message, .genealogical-tree {
+         display: none;
+    }
+
+    .product-images {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        width: 100%;
+    }
+
+    .coat-one {
+        height: 350px;
+        width: 300px;
+    }
+    
+    .coat-two {
+        height: 350px;
+        width: 300px;
+    }
+    
+    .family-tree-one {
+        height: 350px;
+        width: 300px;
+    }
+    
+    .family-tree-two {
+        height: 350px;
+        width: 300px;
+    }
+
+    #div-about-me {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        font-size: 15px;
+    }
+
+    #author-image {
+        height: 300px;
+    }
+
+    footer {
+        height: auto;
+        width: 100%;
+    }
+
+    footer ul {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    footer div {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+    }
+
+}
